@@ -5,14 +5,14 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://holmes_nav/meshes/hh2.stl</uri>
+            <uri>package://meshes/hh2.stl</uri>
           </mesh>
         </geometry>
       </visual>
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://holmes_nav/meshes/hh2.stl</uri>
+            <uri>package://meshes/hh2.stl</uri>
           </mesh>
         </geometry>
       </collision>

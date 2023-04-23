@@ -46,7 +46,7 @@
     <model name="hh2">
       <static>1</static>
       <include>
-        <uri>model://hh2</uri>
+        <uri>package://models/hh2/</uri>
       </include>
     </model>
      
