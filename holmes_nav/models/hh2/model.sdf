@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
   <model name="hh2">
-    <link name="floor">
+    <link name="base_link">
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>package://meshes/hh2.stl</uri>
+            <uri>model://hh2/meshes/hh2_v2.stl</uri>
           </mesh>
         </geometry>
       </visual>
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>package://meshes/hh2.stl</uri>
+            <uri>model://hh2/meshes/hh2_v2.stl</uri>
           </mesh>
         </geometry>
       </collision>
