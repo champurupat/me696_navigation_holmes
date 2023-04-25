@@ -1,0 +1,16 @@
+ros2 launch holmes_nav holmes_hall.launch.py # spawn tb3 in hh2
+
+ros2 launch nav2_bringup navigation_launch.py # for nav2 navigation suite
+
+ros2 run turtlebot3_teleop teleop_keyboard # to control turtlebot3 in gazebo simulation
+
+ros2 launch slam_toolbox online_async_launch.py # to launch slam too
+
+ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz # to bring up rviz gui
+
+########################
+
+ros2 run nav2_map_server map_saver_cli -f my_map_distort --ros-args -p save_map_timeout:=10000 # to save maps from slam
+
+
+
