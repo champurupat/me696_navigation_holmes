@@ -12,5 +12,7 @@ ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/
 
 ros2 run nav2_map_server map_saver_cli -f my_map_distort --ros-args -p save_map_timeout:=10000 # to save maps from slam
 
+#########################experimental
+ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False autostart:=False map:=/home/pat/holmes_ws/src/sample_maps/sample_maps/map_distort.yaml
 
 
