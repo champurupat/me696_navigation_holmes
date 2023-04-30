@@ -1,0 +1,9 @@
+####### Just get old map in
+
+ros2 launch holmes_nav holmes_hall.launch.py # spawn tb3 in hh2
+
+ros2 launch nav2_bringup bringup_launch.py use_sim_time:=True autostart:=False map:=/home/pat/holmes_ws/src/sample_maps/sample_maps/map_test2.yaml # launch nav2 with map, yaml has starting pose too
+
+ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz # to bring up rviz gui
+
+ros2 run turtlebot3_teleop teleop_keyboard # to control turtlebot3 in gazebo simulation

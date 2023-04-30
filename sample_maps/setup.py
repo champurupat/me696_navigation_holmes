@@ -14,6 +14,8 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'sample_maps'), glob(os.path.join('sample_maps', '*.pgm'))),
         (os.path.join('share', package_name, 'sample_maps'), glob(os.path.join('sample_maps', '*.yaml'))),
+        (os.path.join('share', package_name, 'sample_maps'), glob(os.path.join('sample_maps', '*.data'))),
+        (os.path.join('share', package_name, 'sample_maps'), glob(os.path.join('sample_maps', '*.posegraph'))),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
