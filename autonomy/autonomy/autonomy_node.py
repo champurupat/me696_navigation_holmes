@@ -81,11 +81,11 @@ class PlaceholderController(Node):
         # The callback function is called as soon as a message 
         # is received.
         # The maximum number of queued messages is 10.
-        # self.subscription_goal_pose = self.create_subscription(
-        #     Pose,
-        #     '/goal',
-        #     self.pose_received,
-        #     10)
+        self.subscription_goal_pose = self.create_subscription(
+            Pose,
+            '/goal',
+            self.pose_received,
+            10)
              
         # Create a publisher
         # This node publishes the desired linear and angular velocity 
@@ -103,7 +103,8 @@ class PlaceholderController(Node):
         self.left_dist = 999999.9 # Left
         self.leftfront_dist = 999999.9 # Left-front
         self.front_dist = 999999.9 # Front
-        self.rightfront_dist = 999999.9 # Right-front
+        self.rightfront_dist = 999999.9 # Right-frons
+
         self.right_dist = 999999.9 # Right
  
         ################### ROBOT CONTROL PARAMETERS ##################
@@ -124,6 +125,7 @@ class PlaceholderController(Node):
         #   "go to goal mode": Robot will head to an x,y coordinate   
         #   "wall following mode": Robot will follow a wall 
         self.robot_mode = "wall following mode"
+        print("update")
          
         ############# OBSTACLE AVOIDANCE MODE PARAMETERS ##############
          
@@ -280,7 +282,7 @@ class PlaceholderController(Node):
         self.current_y = curr_state[1]
         self.current_yaw = curr_state[2]
          
-        # Wait until we have received some goal destinations.
+        # Wait until we have received some g.pgmoal destinations.
         if self.goal_x_coordinates == False and self.goal_y_coordinates == False:
             return
                  

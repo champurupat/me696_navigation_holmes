@@ -9,6 +9,5 @@
     <node pkg="slam_toolbox" exec="async_slam_toolbox_node" name="slam_toolbox">
         <param name="map_file_name" value="$(find-pkg-share sample_maps)/sample_maps/map_distort"/>
         <param name="map_start_pose" value="[0.0 0.0 0.0]"/>
-        <param name="map_start_at_dock" value="true"/>
     </node>
 </launch>
