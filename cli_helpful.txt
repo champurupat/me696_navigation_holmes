@@ -28,7 +28,7 @@ ros2 launch nav2_bringup navigation_launch.py use_sim_time:=True autostart:=Fals
 
 ros2 launch slam_toolbox online_async_launch.py # to launch slam too
 
-ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz # to bring up rviz gui
+ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz # to bring up rviz gui, click startup, give 2D pose estimate
 
 ros2 run turtlebot3_teleop teleop_keyboard # to control turtlebot3 in gazebo simulation
 
