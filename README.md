@@ -11,8 +11,6 @@ colcon build
 ```
 to launch gazebo of holmes hall second floor fresh terminal, be in the me696_hh2_ws directory
 ```
-cd
-cd me696_hh2_ws
 . install/setup.bash
 ros2 launch holmes_nav holmes_hall.launch.py
 ```
