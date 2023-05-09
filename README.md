@@ -1,3 +1,6 @@
+This repository is mainly for holmes hall second floor gazebo world for navigation simulation.
+Currently has untuned wall following scripts.
+
 make sure waffle and gazebo model path is exported in your .bashrc
 
 sample workflow
